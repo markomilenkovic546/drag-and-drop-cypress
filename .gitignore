@@ -1,2 +1,4 @@
 node_modules
 cypress/e2e/spec.cy.js
+cypress/reports
+cypress/screenshots
