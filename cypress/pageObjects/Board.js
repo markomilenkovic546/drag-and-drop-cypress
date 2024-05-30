@@ -17,6 +17,10 @@ export default class Board {
             return this.column(columnName).find('.CycleCard_operationButton__11yd0:contains("Enable Edit")');
         };
 
+        this.disableEditButton = (columnName) => {
+            return this.column(columnName).find('.CycleCard_operationButton__11yd0:contains("Disable Edit")');
+        };
+
         this.addItemInput = (columnName) => {
             return this.column(columnName).find('.AddTask_addItemInnerContainer__1N_JK');
         };
