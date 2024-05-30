@@ -1,0 +1,53 @@
+[
+    {
+        "id": "col-1",
+        "name": "Backlog",
+        "cards": [
+            {
+                "id": "card-1",
+                "name": "Go shopping"
+            },
+            {
+                "id": "card-2",
+                "name": "Make the dinner"
+            }
+        ]
+    },
+    {
+        "id": "col-2",
+        "name": "In Progress",
+        "cards": [
+            {
+                "id": "card-3",
+                "name": "Working hard"
+            },
+            {
+                "id": "card-4",
+                "name": "Learning new things"
+            }
+        ]
+    },
+    {
+        "id": "col-3",
+        "name": "Complete",
+        "cards": [
+            {
+                "id": "card-5",
+                "name": "Created portfolio"
+            },
+            {
+                "id": "card-6",
+                "name": "Created some side projects"
+            },
+            {
+                "id": "card-7",
+                "name": "Got my first developer job"
+            }
+        ]
+    },
+    {
+        "id": "col-4",
+        "name": "On Hold",
+        "cards": []
+    }
+]

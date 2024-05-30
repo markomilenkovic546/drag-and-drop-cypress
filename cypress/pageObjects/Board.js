@@ -10,11 +10,11 @@ export default class Board {
             return this.column(columnName).find(`.Task_task__1btSi:contains(${cardName})`);
         };
         this.addItemButton = (columnName) => {
-            return this.column(columnName).find('CycleCard_operationButton__11yd0:contains("Add item")');
+            return this.column(columnName).find('.CycleCard_operationButton__11yd0:contains("Add item")');
         };
 
         this.enableEditButton = (columnName) => {
-            return this.column(columnName).find('CycleCard_operationButton__11yd0:contains("Enable edit")');
+            return this.column(columnName).find('.CycleCard_operationButton__11yd0:contains("Enable Edit")');
         };
 
         this.addItemInput = (columnName) => {
@@ -26,5 +26,6 @@ export default class Board {
         this.cancelButton = (columnName) => {
             return this.column(columnName).find('.AddTask_cancelOperation__3G31s');
         };
+        this.trashCanElement = () => cy.get('.TaskContainer_taskContainer__2z1k1');
     }
 }
