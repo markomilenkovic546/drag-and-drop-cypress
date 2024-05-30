@@ -6,7 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
     },
-    baseUrl: "https://drag-and-drop-taupe.vercel.app/",
+    baseUrl: "",
     reporter: 'cypress-mochawesome-reporter',
   },
 });
