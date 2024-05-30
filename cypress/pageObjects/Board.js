@@ -26,6 +26,6 @@ export default class Board {
         this.cancelButton = (columnName) => {
             return this.column(columnName).find('.AddTask_cancelOperation__3G31s');
         };
-        this.trashCanElement = () => cy.get('.TaskContainer_taskContainer__2z1k1');
+        this.trashCanElement = () => cy.get('.TrashCan_container__3Vo-U');
     }
 }

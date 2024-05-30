@@ -17,4 +17,16 @@ describe('Board management - Desktop viewport', () => {
         board.addItemButton(columns[0].name).should('be.visible');
         board.enableEditButton(columns[0].name).should('be.visible');
     });
+    it('User should be able to move a card to other column', () => {
+        const dataTransfer = new DataTransfer();
+        board.card(columns[0].name, columns[0].cards[0].name).trigger('dragstart', { dataTransfer });
+        board.taskContainer(columns[1].name).trigger('drop', { dataTransfer });
+        board.card(columns[1].name, columns[0].cards[0].name).should('be.visible');
+    });
+    it('User should be able to delete card', () => {
+        const dataTransfer = new DataTransfer();
+        board.card(columns[0].name, columns[0].cards[0].name).trigger('dragstart', { dataTransfer });
+        board.trashCanElement().trigger('drop', { dataTransfer });
+        board.card(columns[0].name, columns[0].cards[0].name).should('not.exist');
+    });
 });
